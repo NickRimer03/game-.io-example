@@ -2,7 +2,8 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=webstorm,macos,node
 
 ./node_modules
-/.idea
+.idea
+./dist
 
 ### macOS ###
 # General

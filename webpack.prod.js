@@ -1,11 +1,12 @@
-import merge from "webpack-merge";
+import { merge } from "webpack-merge";
 import common from "./webpack.common.js";
 import TerserJSPlugin from "terser-webpack-plugin";
-import OptimizeCSSAssetsPlugin from "optimize-css-assets-webpack-plugin";
+import CssMinimizerPlugin from "css-minimizer-webpack-plugin";
 
 export default merge(common, {
-  mode: 'production',
+  mode: "production",
   optimization: {
-    minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})],
+    minimize: true,
+    minimizer: [new TerserJSPlugin({}), new CssMinimizerPlugin({})],
   },
 });

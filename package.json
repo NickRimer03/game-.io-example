@@ -14,12 +14,14 @@
   "license": "MIT",
   "type": "module",
   "dependencies": {
+    "css-minimizer-webpack-plugin": "^4.2.2",
     "express": "^4.17.3",
     "html-webpack-plugin": "^5.5.0",
     "lodash": "^4.17.21",
     "shortid": "^2.2.16",
     "socket.io": "^4.4.1",
     "socket.io-client": "^4.4.1",
+    "terser-webpack-plugin": "^5.3.6",
     "throttle-debounce": "^2.3.0",
     "webpack": "^5.75.0",
     "webpack-dev-middleware": "^6.0.1"
